@@ -67,3 +67,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+.auth {
+  @apply flex justify-center items-center min-h-screen w-full bg-purple-100
+}
+
+.root {
+  @apply flex min-h-screen w-full flex-col bg-white lg:flex-row;
+}
+
+.root-container {
+  @apply mt-16 flex-1 overflow-auto py-8 lg:mt-0 lg:max-h-screen lg:py-10
+}
+
+/* ========================================== TAILWIND STYLES */
+@layer utilities {
+  .wrapper {
+    @apply max-w-5xl mx-auto px-5 md:px-10 w-full text-dark-400 font-normal text-[16px] leading-[140%];
+  }
+}
