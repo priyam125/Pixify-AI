@@ -55,6 +55,7 @@ const Sidebar = () => {
                       userButtonBox: "flex flex-row-reverse",
                       userButtonOuterIdentifier:
                         "font-semibold text-[16px] leading-[140%] text-gray-700",
+                      rootBox: "w-full",
                     },
                   }}
                 />
