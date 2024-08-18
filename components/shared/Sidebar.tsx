@@ -47,7 +47,14 @@ const Sidebar = () => {
               })}
 
               <li className="sidebar-nav_element group flex-center flex-row-reverse cursor-pointer gap-2 p-4 font-semibold text-[16px] leading-[140%]">
-                <UserButton afterSwitchSessionUrl="/" showName />
+                <UserButton
+                  afterSwitchSessionUrl="/"
+                  showName
+                  appearance={{
+                    layout: { logoPlacement: "inside" },
+                    elements: { userButtonBox: "flex flex-row-reverse" },
+                  }}
+                />
               </li>
             </ul>
           </SignedIn>
