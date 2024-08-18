@@ -51,8 +51,11 @@ const Sidebar = () => {
                   afterSwitchSessionUrl="/"
                   showName
                   appearance={{
-                    layout: { logoPlacement: "inside" },
-                    elements: { userButtonBox: "flex flex-row-reverse" },
+                    elements: {
+                      userButtonBox: "flex flex-row-reverse",
+                      userButtonOuterIdentifier:
+                        "font-semibold text-[16px] leading-[140%] text-gray-700",
+                    },
                   }}
                 />
               </li>
