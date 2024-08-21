@@ -62,6 +62,8 @@ export async function POST(req: Request) {
     const { id, email_addresses, image_url, first_name, last_name, username } =
       evt.data;
 
+    console.log("evt.data", evt.data);
+
     const user = {
       clerkId: id,
       email: email_addresses[0].email_address,
@@ -71,7 +73,11 @@ export async function POST(req: Request) {
       photo: image_url,
     };
 
+    console.log("user", user);
+
     const newUser = await createUser(user);
+
+    console.log("newUser", newUser);
 
     // Set public metadata
     if (newUser) {
