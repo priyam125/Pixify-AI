@@ -27,20 +27,14 @@ export const connectToDatabase = async () => {
 
   //if cached promise exists then use cached promise or create
   //a new connection
-  console.log("MONGODB_URL", MONGODB_URL);
-  
   cached.promise =
     cached.promise ||
     mongoose.connect(MONGODB_URL, {
-      dbName: "pixify",
+      dbName: "Pixify AI",
       bufferCommands: false,
     });
-    
 
   cached.conn = await cached.promise;
-
-  console.log("cached.conn", cached.conn);
-  
 
   return cached.conn;
 };
